@@ -1,12 +1,12 @@
 import { Container } from "react-bootstrap";
 
-const ContactMe = () => {
+const AboutMe = () => {
   return (
     <>
-      <h2 className="heading">CONTACT ME</h2>
+      <h2 className="heading">ABOUT</h2>
       <Container></Container>
     </>
   );
 };
 
-export default ContactMe;
+export default AboutMe;
