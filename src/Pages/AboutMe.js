@@ -61,18 +61,18 @@ const AboutMe = () => {
             </span>
           </Col>
         </Row>
-        <Row className="info-content">
-          <Col className="info-box">
+        <Row className="info-content justify-content-evenly">
+          <Col lg={3} className="info-box">
             <h3>Software Developer at ColorTokens, inc.</h3>
             <p>FILL</p>
           </Col>
-          <Col className="info-box">
+          <Col lg={3} className="info-box">
             <h3>
               B.S. in Computer Science at the University of California, Irvine
             </h3>
             <p>FILL</p>
           </Col>
-          <Col className="info-box">
+          <Col lg={3} className="info-box">
             <h3>
               Student QA Engineer Intern at UCI's Office of Information
               Technology
