@@ -41,6 +41,53 @@
   font-weight: bold;
 }
 
+.about-content {
+  color: white;
+}
+
+.about-data span,
+.about-subtitle {
+  color: coral;
+  font-weight: 500;
+}
+
+.about-data h2 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.about-text {
+  color: white;
+}
+
+.about-text p {
+  font-size: 0.938rem;
+  letter-spacing: 0.25px;
+  text-align: justify;
+}
+
+.btn-download-icon {
+  width: 1.5rem;
+  height: auto;
+}
+
+.info-content {
+  color: white;
+}
+
+.info-box {
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  background-color: #090a1a;
+  border-radius: 0.4rem;
+  transition: 0.3s all linear;
+}
+
+.info-box:hover {
+  background-color: coral;
+}
+
 .footer-logo {
   width: 35px;
   height: auto;

@@ -8,7 +8,7 @@ const Footer = () => {
         <Col className="align-self-center">
           Personal Portfolio, By Juan Pablo Zavala
         </Col>
-        <Col className="align-self-center">
+        <Col className="text-end">
           <img src={linkedin} alt="Linkedin link" className="footer-logo"></img>
         </Col>
       </Row>
