@@ -2,7 +2,7 @@ import { Container, Nav, Navbar } from "react-bootstrap";
 
 function Navigation() {
   return (
-    <Navbar collapseOnSelect expand="lg" variant="dark">
+    <Navbar collapseOnSelect expand="lg" variant="dark" fixed="top">
       <Container>
         <Navbar.Brand href="/" className="logo">
           Juan Pablo Zavala

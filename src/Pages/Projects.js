@@ -1,10 +1,38 @@
-import { Container } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
+import FabflixImg from "../images/fabflix.jpg";
 
 const Projects = () => {
   return (
     <>
       <h2 className="heading">PROJECTS</h2>
-        <Container></Container>
+      <Container>
+        <Row className="projects-content">
+          <Col className="projects-box">
+            <img src={FabflixImg} alt="" className="projects-image"></img>
+            <div className="projects-overlay">
+              <h2>Fabflix</h2>
+            </div>
+          </Col>
+          <Col className="projects-box">
+            <img src="/" alt="" className="projects-image"></img>
+            <div className="projects-overlay">
+              <h2>Fabflix</h2>
+            </div>
+          </Col>
+          <Col className="projects-box">
+            <img src="/" alt="" className="projects-image"></img>
+            <div className="projects-overlay">
+              <h2>Fabflix</h2>
+            </div>
+          </Col>
+          <Col className="projects-box">
+            <img src="/" alt="" className="projects-image"></img>
+            <div className="projects-overlay">
+              <h2>Fabflix</h2>
+            </div>
+          </Col>
+        </Row>
+      </Container>
     </>
   );
 };
