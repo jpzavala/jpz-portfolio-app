@@ -1,7 +1,37 @@
+import { useState } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
+import EducationModal from "../Components/EducationModal";
 import downloadIcon from "../images/download.png";
 
+const data = [
+  {
+    name: "Software Developer at ColorTokens, inc.",
+    location: "",
+    comment: "",
+  },
+  {
+    name: "Software Developer at ColorTokens, inc.",
+    location: "",
+    comment: "",
+  },
+  {
+    name: "Software Developer at ColorTokens, inc.",
+    location: "",
+    comment: "",
+  },
+  {
+    name: "Software Developer at ColorTokens, inc.",
+    location: "",
+    comment: "",
+  },
+];
+
 const AboutMe = () => {
+  const [show, setShow] = useState(false);
+
+  const openModal = () => setShow(true);
+  const closeModal = () => setShow(false);
+
   return (
     <>
       <h2 className="heading">ABOUT</h2>
@@ -62,25 +92,20 @@ const AboutMe = () => {
           </Col>
         </Row>
         <Row className="info-content justify-content-evenly">
-          <Col lg={3} className="info-box">
-            <h3>Software Developer at ColorTokens, inc.</h3>
-            <p>FILL</p>
-          </Col>
-          <Col lg={3} className="info-box">
-            <h3>
-              B.S. in Computer Science at the University of California, Irvine
-            </h3>
-            <p>FILL</p>
-          </Col>
-          <Col lg={3} className="info-box">
-            <h3>
-              Student QA Engineer Intern at UCI's Office of Information
-              Technology
-            </h3>
-            <p>FILL</p>
-          </Col>
+          {data.map((val, i) => {
+            return (
+              <Col lg={5} className="info-box mb-4 mx-3" onClick={openModal}>
+                <h3>Software Developer at ColorTokens, inc.</h3>
+                <p>FILL</p>
+              </Col>
+            );
+          })}
         </Row>
       </Container>
+
+      {/* Modal */}
+
+      <EducationModal isShowing={show} closeModal={closeModal}></EducationModal>
     </>
   );
 };
