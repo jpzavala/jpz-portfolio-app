@@ -5,29 +5,34 @@ import downloadIcon from "../images/download.png";
 
 const data = [
   {
-    name: "Software Developer at ColorTokens, inc.",
-    location: "",
-    comment: "",
+    name: "Meta Back-End Developer Professional Certificate",
+    location: "Online",
+    comment:
+      "I'm currently enrolled in the Meta Back-End Developer courses to get the professional certificate awarded by Meta. My motivation is to increase my knowledge and learn more practical techniques to work on the backend of a software application.",
   },
   {
     name: "Software Developer at ColorTokens, inc.",
-    location: "",
-    comment: "",
+    location: "San Jose, CA",
+    comment:
+      "I worked at ColorTokens as a Software Engineer in UI Development for their most recent Xcloud product. During my time working on the frontend, I learned to code in React, Next.js, and work on stories to develop an accessible interface for network specialists and network security managers",
   },
   {
-    name: "Software Developer at ColorTokens, inc.",
-    location: "",
-    comment: "",
+    name: "B.S. in Computer Science",
+    location: "Irvine, CA",
+    comment:
+      "I majored in Computer Science at the University of California, Irvine. Throughout my four years in college, I developed a deep understanding of coding techniques, languages, frameworks, algorithms, and concepts. This was possible thanks to the academic coursework I completed with excelent results and the projects I did both independently and collaboratively.",
   },
   {
-    name: "Software Developer at ColorTokens, inc.",
-    location: "",
-    comment: "",
+    name: "Student QA Engineer Intern",
+    location: "Irvine, CA",
+    comment:
+      "During my third year at UCI, I worked as a Student Web Application Quality Assurance Engineer for the Academic Web Technologies team that developed tools for professors, staff, and students to manage their classes. My duties included working in a scrum team, coordinating testing approaches, creating test plans and cases, and writing testing scripts for web applications using Selenium Webdriver in Java",
   },
 ];
 
 const AboutMe = () => {
   const [show, setShow] = useState(false);
+  const [dataIndex, setDataIndex] = useState(0);
 
   const openModal = () => setShow(true);
   const closeModal = () => setShow(false);
@@ -62,8 +67,8 @@ const AboutMe = () => {
                 Hi! My name is Juan Pablo Zavala and I'm a recent Computer
                 Science graduate from the University of California, Irvine.
                 Currently I'm interested in getting a role as a full-stack web
-                development and software developer. While attending university,
-                I have led various software projects to develop useful
+                developer or software developer. While attending university, I
+                have led various software projects to develop useful
                 applications including an e-commerce web application, a fitness
                 recommendation mobile app, and a search engine. Additionally, I
                 have been testing numerous academic web applications for my
@@ -77,7 +82,7 @@ const AboutMe = () => {
                 technologies, and a fan of electronic dance music. Aside from
                 these interests, I consider myself an honest and hard-working
                 person who likes to communicate with others and work towards
-                accomplishing greater goals.
+                developing high quality software.
               </p>
             </div>
           </Col>
@@ -94,9 +99,15 @@ const AboutMe = () => {
         <Row className="info-content justify-content-evenly">
           {data.map((val, i) => {
             return (
-              <Col lg={5} className="info-box mb-4 mx-3" onClick={openModal}>
-                <h3>Software Developer at ColorTokens, inc.</h3>
-                <p>FILL</p>
+              <Col
+                lg={7}
+                className="info-box mb-4 mx-3"
+                onClick={() => {
+                  setDataIndex(i);
+                  openModal();
+                }}
+              >
+                <h3>{data[i].name}</h3>
               </Col>
             );
           })}
@@ -105,7 +116,11 @@ const AboutMe = () => {
 
       {/* Modal */}
 
-      <EducationModal isShowing={show} closeModal={closeModal}></EducationModal>
+      <EducationModal
+        isShowing={show}
+        closeModal={closeModal}
+        data={data[dataIndex]}
+      ></EducationModal>
     </>
   );
 };

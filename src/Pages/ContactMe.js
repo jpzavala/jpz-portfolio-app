@@ -19,7 +19,7 @@ const ContactMe = () => {
               <Form.Group className="mb-4" controlId="formMessage">
                 <Form.Control
                   as="textarea"
-                  placeholder="Write message here..."
+                  placeholder="Write me a message here..."
                   style={{ height: "200px" }}
                 />
               </Form.Group>

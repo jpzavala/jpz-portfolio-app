@@ -4,14 +4,11 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import Projects from "./Pages/Projects";
 import ContactMe from "./Pages/ContactMe";
-import Navigation from "./Components/Navigation";
-import Footer from "./Components/Footer";
 import AboutMe from "./Pages/AboutMe";
 
 function App() {
   return (
     <div className="App">
-      <Navigation></Navigation>
       <Router>
         <Routes>
           <Route path="/" element={<Home />}></Route>
@@ -20,7 +17,6 @@ function App() {
           <Route path="/contactme" element={<ContactMe />}></Route>
         </Routes>
       </Router>
-      <Footer></Footer>
     </div>
   );
 }
