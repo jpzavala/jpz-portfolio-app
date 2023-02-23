@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/jpz-portfolio-app/static/css/main.7aa95f0e.css",
+    "main.js": "/jpz-portfolio-app/static/js/main.228b42a1.js",
+    "static/js/787.a76fdb47.chunk.js": "/jpz-portfolio-app/static/js/787.a76fdb47.chunk.js",
+    "static/media/searchengine.jpeg": "/jpz-portfolio-app/static/media/searchengine.9184e43b3b82c177b7d3.jpeg",
+    "static/media/resume-jpz.pdf": "/jpz-portfolio-app/static/media/resume-jpz.6d5bc0b4c6297ea19068.pdf",
+    "static/media/fabflix.jpg": "/jpz-portfolio-app/static/media/fabflix.79031ed9951f560d36a8.jpg",
+    "static/media/bg-picture.webp": "/jpz-portfolio-app/static/media/bg-picture.87635d9d72948eff83a4.webp",
+    "static/media/fittrack.webp": "/jpz-portfolio-app/static/media/fittrack.71a5fba20f83bf2d610b.webp",
+    "static/media/jpnotepad.jpg": "/jpz-portfolio-app/static/media/jpnotepad.1ce759d9d2b160029d09.jpg",
+    "index.html": "/jpz-portfolio-app/index.html",
+    "main.7aa95f0e.css.map": "/jpz-portfolio-app/static/css/main.7aa95f0e.css.map",
+    "main.228b42a1.js.map": "/jpz-portfolio-app/static/js/main.228b42a1.js.map",
+    "787.a76fdb47.chunk.js.map": "/jpz-portfolio-app/static/js/787.a76fdb47.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7aa95f0e.css",
+    "static/js/main.228b42a1.js"
+  ]
+}
