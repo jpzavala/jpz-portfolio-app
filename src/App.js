@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import background from "../src/images/bg-picture.webp";
 
@@ -12,11 +12,11 @@ function App() {
         backgroundImage: `url(${background})`,
       }}
     >
-      <Router>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route path="/" element={<Home />}></Route>
         </Routes>
-      </Router>
+      </BrowserRouter>
     </div>
   );
 }
