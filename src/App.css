@@ -10,22 +10,18 @@
 }
 
 body {
-  background-color: #0e0e3b;
+  background-color: #14141c;
+  margin-top: 4rem;
 }
 
-.home {
-  margin-top: 3rem;
-  height: 2000px;
+body > #root > div {
+  height: 100%;
 }
 
 .logo {
   font-weight: bold;
-  font-size: 1.75rem;
+  font-size: 6rem;
   color: coral;
-}
-
-.navbar {
-  background-color: #00202e !important;
 }
 
 .nav-link {
@@ -163,4 +159,8 @@ body {
 .footer-logo {
   width: 35px;
   height: auto;
+}
+
+.footer-text {
+  color: white;
 }
