@@ -4,7 +4,7 @@ import Navigation from "../Components/Navigation";
 import downloadIcon from "../images/download.png";
 import resume from "../images/resume-jpz.pdf";
 import FabflixImg from "../images/fabflix.jpg";
-import FitTrackImg from "../images/fittrack.webp";
+import touchlessImg from "../images/touchless-gallery.jpg";
 import jpNotepadImg from "../images/jpnotepad.jpg";
 import searchEngineImg from "../images/searchengine.jpeg";
 
@@ -50,10 +50,10 @@ const Home = () => {
               </a>
             </Col>
             <Col lg={5} className="projects-box">
-              <a href="https://github.com/vikmir23/FitTrack">
-                <img src={FitTrackImg} alt="" className="projects-image"></img>
+              <a href="https://github.com/jpzavala/Touch-Less-Gallery">
+                <img src={touchlessImg} alt="" className="projects-image"></img>
                 <div className="projects-overlay">
-                  <h2>FitTrack</h2>
+                  <h2>Touchless Gallery</h2>
                 </div>
               </a>
             </Col>
